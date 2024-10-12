@@ -1,0 +1,1 @@
+Cashoo is a fictional website built using HTML, CSS and JavaScript.
