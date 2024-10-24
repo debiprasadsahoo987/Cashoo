@@ -128,7 +128,7 @@ img {
 /* nav and stickly class at the same time */
 .nav.sticky {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 249, 196, 0.904);
 }
 
 .nav__logo {
@@ -173,7 +173,7 @@ img {
 
 /* HEADER */
 .header {
-  padding: 0 3rem;
+  /* padding: 0 3rem; */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -207,10 +207,10 @@ h4 {
 
 .hero__img {
   position: absolute;
-
-  /* transform: translateY(15rem); */
+  top: 10%;
   right: 8rem;
 
+  transform: translateY(20rem);
   height: 50rem;
   width: 50rem;
 
@@ -232,16 +232,19 @@ h4 {
 
 @keyframes bounceBall {
   0% {
-    transform: translateY(15rem);
+    transform: translateY(5rem);
   }
   25% {
-    transform: translateY(20rem);
+    transform: translateY(15rem);
   }
   50% {
-    transform: translateY(10rem);
+    transform: translateY(20rem);
+  }
+  75% {
+    transform: translateY(15rem);
   }
   100% {
-    transform: translateY(15rem);
+    transform: translateY(5rem);
   }
 }
 .header__img {
@@ -276,6 +279,15 @@ h4 {
 
 .features__img {
   width: 100%;
+  border-radius: 5rem;
+  box-shadow: rgba(221, 143, 60, 0.551) 0px 50px 100px -20px,
+    rgba(205, 88, 10, 0.652) 0px 30px 60px -30px,
+    rgba(193, 131, 25, 0.689) 0px -2px 6px 0px inset;
+  transition: transform 0.2s linear;
+}
+
+.features__img:hover {
+  transform: scale(1.02);
 }
 
 .features__feature {
