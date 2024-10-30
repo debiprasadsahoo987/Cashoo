@@ -1,4 +1,5 @@
 :root {
+  --color-background: #fff9c4;
   --color-primary: #ffa45b;
   --color-secondary: #ffcb03;
   --color-tertiary: #ff585f;
@@ -30,7 +31,7 @@ body {
   font-weight: 300;
   color: #444;
   line-height: 1.9;
-  background-color: #fff9c4;
+  background-color: var(--color-background);
   overflow-x: hidden;
 }
 
@@ -324,7 +325,8 @@ h4 {
   max-width: 100rem;
   margin: 12rem auto 0 auto;
 
-  background-color: #fff;
+  background-color: rgba(233, 200, 130, 0.286);
+  border-radius: 5rem;
 }
 
 .operations__tab-container {
